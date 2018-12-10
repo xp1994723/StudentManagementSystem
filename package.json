@@ -1,0 +1,23 @@
+{
+  "name": "szhmqd25_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "captchapng": "^0.0.1",
+    "express": "^4.16.4",
+    "express-art-template": "^1.0.1",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.10",
+    "mysql": "^2.16.0",
+    "xtpl": "^3.4.0"
+  }
+}

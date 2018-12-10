@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生信息列表</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <script src="/js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <h4 style="margin: 0;line-height: 57px;">欢迎进入后台管理系统</h4>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-text navbar-right">
+                            <p style="margin: 0;font-size: 16px;"><span style="margin-right: 10px; color: #333;">{{username}}</span>欢饮您！<a style="font-size: 18px;font-weight: bold;color: red;" href="/account/logout">登出</a></p>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="list-group">
+                <a class="list-group-item active" href="/manage/studentList">学生管理</a>
+                <a class="list-group-item" href="#">系统管理</a>
+                <a class="list-group-item" href="#">用户管理</a>
+                <a class="list-group-item" href="#">修改密码</a>
+                <a class="list-group-item" href="#">退出系统</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{block 'body'}}{{/block}}
+        </div>
+    </div>
+</div>
+</body>
+</html>
